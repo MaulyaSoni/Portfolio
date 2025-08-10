@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // 👈 THIS is required
 import App from './App';
 import './index.css';
+import aos from 'aos';
+import { BrowserRouter } from 'react-router-dom';
+import 'aos/dist/aos.css';
 
-AOS.init({
+aos.init({
   duration: 1000,
   once: true
 });
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
+  <BrowserRouter basename="/Portfolio">
+ <App />
   </BrowserRouter>
 );
 
- 
+  
