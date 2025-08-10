@@ -11,7 +11,9 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+
+
       <div className="app-container">
         <Header />
         <main>
@@ -24,6 +26,6 @@ export default function App() {
         </main>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
