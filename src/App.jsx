@@ -11,7 +11,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app-container">
         <Header />
         <main>
