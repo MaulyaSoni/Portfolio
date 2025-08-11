@@ -1,24 +1,18 @@
+ 
 /* src/components/Navbar.css */
 .navbar {
-  /* position: fixed;
-  position: sticky; */
-  /* top: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 999; */
-  
+  z-index: 1000;
   padding: 16px 40px;
   background-color: #1e1e1e;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
-  position: fixed;
-  top: 0;
-  width: 100%; /* optional, for full-width navbar */
-  z-index: 1000;
 }
 
 .navbar.scrolled {
- 
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-container {
@@ -31,7 +25,11 @@
 
 .logo {
   font-size: 24px;
-  cursor: pointer;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -40,18 +38,18 @@
   list-style: none;
 }
 
-.nav-links li {
-  cursor: pointer;
-  color: #d0ff00;
+.nav-links li a {
+  text-decoration: none;
+  color: #d9ff00;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links li:hover
-{
-  color: hsl(27, 100%, 54%);
+.nav-links li a:hover {
+  color: hsl(224, 100%, 51%);
 }
-.nav-links li.active {
+
+.nav-links li.active a {
   color: #00fc0d;
 }
 
