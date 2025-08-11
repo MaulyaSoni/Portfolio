@@ -11,8 +11,8 @@
 }
 
 .about p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.5rem;
+  color: #bec7c7;
   margin-bottom: 20px;
 }
 
@@ -25,6 +25,7 @@
   background-color: #f5f5f5;
   margin: 8px 0;
   padding: 10px;
+  color: black;
   border-radius: 5px;
 }
     

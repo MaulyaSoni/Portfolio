@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jakarta+Sans:wght@400;500;600&display=swap');
+
+
 /* ==============================
    Root Variables & Global Styles
 ============================== */
@@ -33,8 +36,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+/* Apply Jakarta Sans font globally */
 }
 
+ 
 /* src/styles.css or index.css */
 html, body, #root {
   height: 100%;

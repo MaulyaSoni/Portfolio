@@ -15,18 +15,18 @@ const Hero = () => {
     >
       <div className=" container hero-content">
         <h1>
-          Hey, I'm <span className="gradient-text">YourName</span>
+          Hey, I'm <span className="gradient-text">name</span>
         </h1>
 
         <h1 className="h1 shine">Crafting beautiful digital experiences</h1>
 
         <TypeAnimation
           sequence={[
-            "Web Developer 💻",
+            "MERN Stack Developer 🎨",
             2000,
-            "UI/UX Designer 🎨",
+            "AI/ML Enthusiast 💻",
             2000,
-            "Creative Coder 💡",
+            "Critical thinker 💡",
             2000,
           ]}
           wrapper="span"
@@ -35,7 +35,7 @@ const Hero = () => {
           repeat={Infinity}
         />
 
-        <p>Let’s build something amazing together.</p>
+        <p style={{color:"lightgreen", fontFamily:"sans-serif"}}>Let’s build something amazing together.</p>
 
         <Tilt
           glareEnable={true}

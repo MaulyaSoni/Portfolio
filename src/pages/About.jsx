@@ -9,6 +9,8 @@ export default function About() {
         I’m a passionate developer with experience in building interactive and responsive websites.
         My goal is to create digital experiences that are fast, beautiful, and accessible.
       </p>
+      <br />
+      <br />
       <h3>Skills</h3>
       <ul className="skills">
         <li>HTML / CSS / JavaScript</li>
@@ -16,6 +18,7 @@ export default function About() {
         <li>MongoDB / MySQL</li>
         <li>Git / GitHub</li>
       </ul>
+      <br />
       </div>
     </section>
   );

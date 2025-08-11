@@ -41,11 +41,15 @@
 }
 
 .typewriter {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
+  font-family: 'Poppins','sans-serif';
+  font-style: inherit; 
   margin: 16px 0;
+  color: #d9ff05;
   display: inline-block;
 }
+
 
 .hero p {
   font-size: 1.2rem;
@@ -59,7 +63,7 @@
   padding: 16px;
   border-radius: 12px;
   background-color: #111;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
   z-index: 1;
 }
 
