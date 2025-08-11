@@ -1,17 +1,22 @@
 /* src/components/Navbar.css */
 .navbar {
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  position: sticky; */
+  /* top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 999; */
   padding: 16px 40px;
-  background-color: transparent;
+  background-color: #1e1e1e;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%; /* optional, for full-width navbar */
+  z-index: 1000;
 }
 
 .navbar.scrolled {
-  background-color: #1e1e1e;
+ 
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,14 +41,17 @@
 
 .nav-links li {
   cursor: pointer;
-  color: #fff;
+  color: #d0ff00;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links li:hover,
+.nav-links li:hover
+{
+  color: hsl(27, 100%, 54%);
+}
 .nav-links li.active {
-  color: #97ccc9;
+  color: #00fc0d;
 }
 
 .hamburger {

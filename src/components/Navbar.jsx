@@ -40,7 +40,7 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Logo */}
         <div className="logo" onClick={() => handleNavClick("home")}>
-          👾
+         <i className="fa-solid fa-user-tie"></i>
         </div>
 
         {/* Nav Links */}

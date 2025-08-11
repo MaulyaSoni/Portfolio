@@ -45,13 +45,13 @@ const Hero = () => {
           scale={1.05}
           transitionSpeed={1500}
         >
-          {/* <div className="hero-card">
+          {/* `<div className="hero-card">
             <img
               src="/assets/phone-mockup.png"
               alt="mockup"
               className="hero-mockup"
             />
-          </div> */}
+          </div>` */}
         </Tilt>
       </div>
     </motion.section>

@@ -13,14 +13,32 @@ footer {
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
-}
 
-.footer .socials a {
-  color: #00bcd4;
+}
+.footer .writing p{
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+.socials a {
+  
+  color: #ffffff;
+  background-color: #111;
   margin: 0 10px;
   text-decoration: none;
+  
+  /* keep text color */
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  /* space between icon and text */
+  font-size: 2rem;
 }
 
-.footer .socials a:hover {
-  text-decoration: underline;
+.socials a:hover {
+  color: #00bcd4;
+ 
 }

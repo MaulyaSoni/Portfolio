@@ -16,10 +16,7 @@ export default function Home() {
       setTimeout(() => el.classList.add("in"), i * 120);
     });
   }, []);
-return (
-  
-   
-
+  return (
    <>
   <section id="hero"><Hero /></section>
   <section id="about"><About /></section>
