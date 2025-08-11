@@ -1,10 +1,11 @@
+import AboutSkillsExpertise from "../components/AboutSkillsExpertise";
 import "./About.css";
 
 export default function About() {
   return (
     <section className="about" id="about">
       <div className="container">
-      <h2>About Me</h2>
+      {/* <h2>About Me</h2>
       <p>
         I’m a passionate developer with experience in building interactive and responsive websites.
         My goal is to create digital experiences that are fast, beautiful, and accessible.
@@ -18,7 +19,8 @@ export default function About() {
         <li>MongoDB / MySQL</li>
         <li>Git / GitHub</li>
       </ul>
-      <br />
+      <br /> */}
+        <AboutSkillsExpertise/>
       </div>
     </section>
   );

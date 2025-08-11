@@ -1,9 +1,10 @@
 .hero {
   position: relative;
-  padding: 100px 20px;
+  /* padding: 100px 20px; */
   text-align: center;
   overflow: hidden;
   z-index: 1;
+   padding-top: 80px;
 }
 
 .hero-content {
@@ -85,12 +86,12 @@
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
 }
-
+/* 
 .hero-mockup {
   width: 100%;
   max-width: 280px;
   border-radius: 12px;
-}
+} */
 
 /* 🌈 Animated Background Blobs */
 .hero-bg-blobs {

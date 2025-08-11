@@ -1,6 +1,7 @@
 .about {
   padding: 50px 20px;
-  max-width: 800px;
+  /* max-width: 800px; */
+  width: 100%;
   margin: auto;
 }
 
@@ -19,6 +20,7 @@
 .skills {
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .skills li {
