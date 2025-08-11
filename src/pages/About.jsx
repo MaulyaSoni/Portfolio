@@ -2,7 +2,8 @@ import "./About.css";
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
+      <div className="container">
       <h2>About Me</h2>
       <p>
         I’m a passionate developer with experience in building interactive and responsive websites.
@@ -15,6 +16,7 @@ export default function About() {
         <li>MongoDB / MySQL</li>
         <li>Git / GitHub</li>
       </ul>
+      </div>
     </section>
   );
 }

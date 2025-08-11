@@ -1,30 +1,60 @@
 // src/components/Hero.jsx
 import React from "react";
-import { TypeAnimation } from 'react-type-animation';
-import './Hero.css';
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
+import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h1>Hey, I'm <span className="gradient-text">YourName</span></h1>
+    <motion.section
+      className="hero"
+      initial={{ opacity: 0, y: 80 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <div className=" container hero-content">
+        <h1>
+          Hey, I'm <span className="gradient-text">YourName</span>
+        </h1>
+
+        <h1 className="h1 shine">Crafting beautiful digital experiences</h1>
+
         <TypeAnimation
           sequence={[
-            'Web Developer 💻',
+            "Web Developer 💻",
             2000,
-            'UI/UX Designer 🎨',
+            "UI/UX Designer 🎨",
             2000,
-            'Creative Coder 💡',
-            2000
+            "Creative Coder 💡",
+            2000,
           ]}
           wrapper="span"
           speed={50}
           className="typewriter"
           repeat={Infinity}
         />
+
         <p>Let’s build something amazing together.</p>
+
+        <Tilt
+          glareEnable={true}
+          glareMaxOpacity={0.1}
+          glareColor="#ffffff"
+          glarePosition="all"
+          scale={1.05}
+          transitionSpeed={1500}
+        >
+          {/* <div className="hero-card">
+            <img
+              src="/assets/phone-mockup.png"
+              alt="mockup"
+              className="hero-mockup"
+            />
+          </div> */}
+        </Tilt>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

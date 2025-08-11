@@ -23,7 +23,8 @@ export default function Projects() {
   ];
 
   return (
-    <section className="container" id="projects" style={{ padding: "60px 0" }}>
+    <section  id="projects" className="projects">
+       <div className="container">
       <h2 className="h2" data-aos="fade-up">Selected Projects</h2>
       <p className="lead" data-aos="fade-up" data-aos-delay="100">
         A small selection of work — focused on clarity, performance, and delightful UX.
@@ -36,6 +37,7 @@ export default function Projects() {
             key={i}
             data-aos="fade-up"
             data-aos-delay={i * 100 + 200}
+          
           >
             <div className="meta">Project #{i + 1}</div>
             <h3>{project.title}</h3>
@@ -56,6 +58,7 @@ export default function Projects() {
             </div>
           </article>
         ))}
+      </div>
       </div>
     </section>
   );

@@ -5,9 +5,6 @@ const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-console.log("Service ID:", SERVICE_ID);
-console.log("Template ID:", TEMPLATE_ID);
-console.log("Public Key:", PUBLIC_KEY);
 
 export default function Contact() {
   function sendEmail(e) {
@@ -21,7 +18,8 @@ export default function Contact() {
   }
 
   return (
-    <section className="contact" data-aos="fade-up">
+    <section className="contact" id="contact"data-aos="fade-up">
+      <div className="container">
       <h2>Contact Me</h2>
       <form onSubmit={sendEmail}>
         <input type="text" name="name" placeholder="Your Name" required />
@@ -29,6 +27,7 @@ export default function Contact() {
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      </div>
     </section>
   );
 }
