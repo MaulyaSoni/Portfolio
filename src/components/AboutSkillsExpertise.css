@@ -1,11 +1,23 @@
 .about-skills-expertise {
-  padding: 5rem 10%;
+  padding: 2rem 1%;
   /* background: #0a0f1c; */
   color: #fff;
   font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeUpAnim 0.8s ease forwards;
+  animation-delay: 0.2s; /* optional delay */
+}
+
+@keyframes fadeUpAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 h2{
-    padding: 1rem;
+    padding-left: 0%;
+    padding-bottom: 1px;
 }
 /* About */
 .about-container {
