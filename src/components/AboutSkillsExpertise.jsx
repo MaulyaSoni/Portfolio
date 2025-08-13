@@ -56,7 +56,7 @@ export default function AboutSkillsExpertise() {
       </div>
 
       {/* Skills */}
-      <div className="skills-container" data-scroll data-scroll-speed="1">
+      {/* <div className="skills-container" data-scroll data-scroll-speed="1">
         <h2>Skills</h2>
         <div className="skill">
           <span>React</span>
@@ -76,7 +76,7 @@ export default function AboutSkillsExpertise() {
             <div className="fill" style={{ width: "80%" }}></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Expertise */}
       <div className="expertise-container" data-scroll data-scroll-speed="1">
@@ -86,6 +86,7 @@ export default function AboutSkillsExpertise() {
             <FaLaptopCode size={30} />
             <h3>Full Stack Development</h3>
           </div>
+          
           {/* <div className="expertise-card">
             <FaMobileAlt size={30} />
             <h3>Mobile Development</h3>

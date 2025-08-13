@@ -1,0 +1,93 @@
+.achievements {
+  padding: 80px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.achievements-container {
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeUpAnim 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeUpAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00bcd4;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* CARD STYLING */
+.achievement-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  color: #ccc; /* default text color */
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, rgba(0, 225, 255, 0.2), rgba(183, 0, 255, 0.2));
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(0, 225, 255, 0.4),
+              0 0 20px rgba(183, 0, 255, 0.3);
+}
+
+.achievement-card:hover h3,
+.achievement-card:hover p {
+  color: #fff; /* text color on hover */
+}
+
+.achievement-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: inherit; /* inherit hover color */
+}
+
+.achievement-card p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: inherit;
+}
+
+/* BUTTON STYLING */
+.achievement-link {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00e1ff, #0077ff, #b700ff);
+  background-size: 300% 100%;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.4s ease, box-shadow 0.4s ease;
+}
+
+.achievement-link:hover {
+  background-position: 100% 0; /* animate gradient */
+  color: #fff; /* text stays readable */
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 173, 255, 0.6),
+              0 0 15px rgba(209, 119, 209, 0.4);
+}

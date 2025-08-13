@@ -215,6 +215,7 @@ export default function Navbar() {
     { name: "About", path: "/about", icon: "fa-user" },
     { name: "Projects", path: "/projects", icon: "fa-code" },
     { name: "Contact", path: "/contact", icon: "fa-envelope" },
+    { name: "Achievements", path: "/achievements", icon:"fa-trophy"},
   ];
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);

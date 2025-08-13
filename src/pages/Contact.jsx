@@ -49,7 +49,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
+          
           {/* Contact Form */}
           <form className="contact-form" onSubmit={sendEmail}>
             <input type="text" name="name" placeholder="Your Name" required />

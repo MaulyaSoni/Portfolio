@@ -6,7 +6,7 @@ import AboutSkillsExpertise from "../components/AboutSkillsExpertise";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import About from "./About";
-
+import Achievements from "./Achievements";
 export default function Home() {
   useEffect(() => {
     // Reveal animation on mount

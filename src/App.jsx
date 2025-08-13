@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import Achievements from "./pages/Achievements";
 export default function App() {
   return (
     <>
@@ -20,6 +20,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/achievements" element={<Achievements />} />
         </Routes>
       </main>
       <Footer />
