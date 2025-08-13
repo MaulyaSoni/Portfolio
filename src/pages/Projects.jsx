@@ -1,5 +1,4 @@
-import "../styles.css";
-
+import "./Projects.css";
 export default function Projects() {
   const projects = [
     {
@@ -51,8 +50,8 @@ export default function Projects() {
               ))}
             </div>
 
-            <div style={{ marginTop: 12 }}>
-              <a className="btn" href={project.link} target="_blank" rel="noopener noreferrer">
+            <div style={{ marginTop: 12  }}>
+              <a className="btn " href={project.link} target="_blank" rel="noopener noreferrer">
                 Open
               </a>
               <a className="btn" href={project.link} target="_blank" rel="noopener noreferrer">

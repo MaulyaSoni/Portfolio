@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <section className="contact" id="contact" data-aos="fade-up">
       <div className="container">
-        <h2 className="gradient-text">Contact  me</h2>
+        <h2 className="gradient-text fade-up">Contact  me</h2>
         <p className="subtitle">
           Want to collaborate or having  a question ?  Drop me a message below.
         </p>
