@@ -24,7 +24,7 @@ export default function Projects() {
 
   return (
     <section  id="projects" className="projects">
-       <div className="container">
+       <div className="container mt-3">
       <h2 className="h2" data-aos="fade-up">My Projects</h2>
       <p className="lead" data-aos="fade-up" data-aos-delay="100">
         A small selection of work — focused on clarity, performance, and delightful UX.
