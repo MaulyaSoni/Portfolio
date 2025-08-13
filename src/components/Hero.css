@@ -1,10 +1,22 @@
+/* Import Jakarta Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0f14;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
-  /* padding: 100px 20px; */
   text-align: center;
+  padding: 100px 20px 80px;
   overflow: hidden;
   z-index: 1;
-   padding-top: 80px;
 }
 
 .hero-content {
@@ -24,40 +36,37 @@
 }
 
 .h1.shine {
-  background: linear-gradient(90deg, #fff, #aaa, #fff);
+  background: linear-gradient(90deg, #78468f, #c94dc3, #c354c7);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: shineSweep 2.5s infinite linear;
+  animation: shineSweep 5s infinite linear;
 }
 
 @keyframes shineSweep {
-  0% {
-    background-position: -100%;
-  }
-  100% {
-    background-position: 200%;
-  }
+  0% { background-position: -100%; }
+  100% { background-position: 200%; }
 }
 
+/* Typewriter Text */
 .typewriter {
   font-size: 1.8rem;
   font-weight: 500;
-  font-family: 'Poppins','sans-serif';
-  font-style: inherit; 
+  font-family: 'Plus Jakarta Sans', sans-serif;
   margin: 16px 0;
   color: #d9ff05;
   display: inline-block;
 }
 
-
+/* Hero Paragraph */
 .hero p {
   font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 40px;
 }
 
+/* Hero Card with Glow */
 .hero-card {
   position: relative;
   display: inline-block;
@@ -86,14 +95,8 @@
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
 }
-/* 
-.hero-mockup {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 12px;
-} */
 
-/* 🌈 Animated Background Blobs */
+/* Animated Background Blobs */
 .hero-bg-blobs {
   position: absolute;
   top: -150px;
@@ -107,7 +110,65 @@
 }
 
 @keyframes floatBlob {
-  0%   { transform: translate(0, 0); }
-  50%  { transform: translate(60px, 80px); }
-  100% { transform: translate(0, 0); }
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(60px, 80px); }
+}
+
+/* Slideshow Text Fade */
+.slideshow-text {
+  display: inline-block;
+  font-size: 2rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding-bottom: 1%;
+}
+
+.fade-in { opacity: 1; transform: translateY(0); }
+.fade-out { opacity: 0; transform: translateY(-10px); }
+
+/* Social Icons */
+.social-icons, .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a, .socials a {
+  width: 40px;
+  height: 40px;
+  background-color: #1a1d25;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover, .socials a:hover {
+  background-color: #000000;
+  transform: scale(1.1);
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+.socials a {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.email:hover{
+  background-color: red !important;
+}
+.linkedin:hover {
+  background-color: blue !important;
+}
+.github:hover {
+  background-color: rgb(49, 49, 51) !important;
 }

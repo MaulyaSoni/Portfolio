@@ -222,9 +222,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <div className="logo">
+        <div className="gradient">
           <Link to="/" onClick={() => setMenuOpen(false)}>
-           <i class="fa-solid fa-circle-user"></i>
+          <h3>Maulya Soni </h3>
           </Link>
         </div>
 
