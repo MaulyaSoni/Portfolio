@@ -42,7 +42,8 @@ h3{
 .about-img img {
   max-width: 300px;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+  box-shadow: 0 0 20px rgba(0, 225, 255, 0.7);
+   
 }
 
 /* Skills */

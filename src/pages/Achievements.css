@@ -1,8 +1,11 @@
 .achievements {
   padding: 80px 20px;
-  color: #fff;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00e1ff;
+  text-shadow: 0 0 10px rgba(0, 225, 255, 0.7);
 }
 
 .achievements-container {

@@ -1,14 +1,16 @@
 .about {
-  padding: 50px 20px;
-  /* max-width: 800px; */
-  width: 100%;
-  margin: auto;
+   
+  padding: 80px 20px;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00e1ff;
 }
 
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
   color: #00bcd4;
+  text-shadow: 0 0 10px rgba(0, 225, 255, 0.7);
 }
 
 .about p {
