@@ -210,13 +210,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { name: "Home", path: "/", icon: "fa-house" },
-    { name: "About", path: "/about", icon: "fa-user" },
-    { name: "Projects", path: "/projects", icon: "fa-code" },
-    { name: "Contact", path: "/contact", icon: "fa-envelope" },
-    { name: "Achievements", path: "/achievements", icon:"fa-trophy"},
-  ];
+  // const navItems = [
+  //   { name: "Home", path: "/", icon: "fa-house" },
+  //   { name: "About", path: "/about", icon: "fa-user" },
+  //   { name: "Projects", path: "/projects", icon: "fa-solid fa-screwdriver-wrench" },
+  //   { name: "Contact", path: "/contact", icon: "fa-envelope" },
+  //   { name: "Achievements", path: "/achievements", icon:"fa-trophy"},
+  // ];
+const navItems = [
+  { name: "Home", path: "/", icon: "fa-regular fa-house" }, // placeholder, house not in regular
+  { name: "About", path: "/about", icon: "fa-regular fa-user" },
+  { name: "Projects", path: "/projects", icon: "fa-regular fa-screwdriver-wrench" },
+  { name: "Contact", path: "/contact", icon: "fa-regular fa-envelope" },
+  { name: "Achievements", path: "/achievements", icon: "fa-regular fa-trophy" },
+];
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 

@@ -80,8 +80,8 @@ export default function Projects() {
     },
     {
       title: "Airbnb",
-      desc: "Fast shopping experience with optimistic UI and PWA support.",
-      tech: ["React", "Stripe", "PWA"],
+      desc: "Fast booking  experience for hotels and Paid guest with optimistic UI and trust.",
+      tech: ["React", "Express", "Node","Mongo-ATLAS"],
       link: "#"
     },
     {
@@ -126,7 +126,8 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Open
+                  Open  &nbsp;
+                  <i class="fa-solid fa-unlock"></i>
                 </a>
                 <a
                   className="project-link"
@@ -135,6 +136,8 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   Get Code
+                  &nbsp;
+                  <i class="fa-solid fa-code"></i>
                 </a>
               </div>
             </article>

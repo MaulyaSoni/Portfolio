@@ -26,7 +26,7 @@ export default function Contact() {
 
         <div className="contact-wrapper">
           {/* Contact Info */}
-          <div className="contact-info">
+          {/* <div className="contact-info">
             <div className="info-item">
               <i className="fa-solid fa-location-dot"></i>
               <div>
@@ -48,7 +48,7 @@ export default function Contact() {
                 <p>+91 98765 43210</p>
               </div>
             </div>
-          </div>
+          </div> */}
           
           {/* Contact Form */}
           <form className="contact-form" onSubmit={sendEmail}>
@@ -57,7 +57,7 @@ export default function Contact() {
             <input type="text" name="subject" placeholder="Subject" required />
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">
-              Send Message <i className="fa-regular fa-paper-plane"></i>
+              Send Message <i className="fa-regular fa-message"></i>
             </button>
           </form>
         </div>

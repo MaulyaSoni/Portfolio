@@ -9,7 +9,7 @@ export default function Achievements() {
 
         <div className="achievements-grid">
           <div className="achievement-card">
-            <h3>Bagdes</h3>
+            <h3>Bagdes <i class="fa-regular fa-star"></i></h3>
             <p>Check my badges on Credly</p>
             <a
               href="https://www.credly.com/users/23dit072-maulya-soni"
@@ -18,10 +18,11 @@ export default function Achievements() {
               className="achievement-link"
             >
               View Credly Profile
+              
             </a>
           </div>
           <div className="achievement-card">
-            <h3>Certifications</h3>
+            <h3>Certifications <i class="fa-solid fa-award"></i></h3>
             <p>Check my certifications on Coursera</p>
             <a
               href="https://www.coursera.org/account-profile"

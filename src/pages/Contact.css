@@ -1,26 +1,28 @@
 /* === General === */
 .contact {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  padding: 40px 20px; /* reduced padding to avoid large space */
+  padding: 40px 20px;
+  /* reduced padding to avoid large space */
 }
 
 /* === Heading === */
 .gradient-text {
-  font-weight: 900;
-  padding: 20px 10px; /* reduced from 80px */
+  font-weight: 700;
+  padding: 20px 10px;
+  /* reduced from 80px */
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 10px; /* reduced from 40px */
-  color: #00e1ff;
+  margin-bottom: 10px;
+  /* reduced from 40px */
+  color: #0cffdf !important;
   text-shadow: 0 0 10px rgba(0, 225, 255, 0.7);
 }
 
 .subtitle {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 20px; /* more balanced spacing */
+  margin: 0 auto 20px;
+  /* more balanced spacing */
   color: #cbd5e1;
   font-size: 1rem;
 }
@@ -31,7 +33,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin-top: 10px; /* reduces gap from heading */
+  margin-top: 3rem;
+  /* reduces gap from heading */
 }
 
 .contact-info {
@@ -127,9 +130,9 @@
   padding: 14px 20px;
   opacity: 1;
   border: none;
-  border-radius: 8px;
+  border-radius: 2rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 50;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -142,8 +145,14 @@
 
 .contact-form button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.6);
+  background: linear-gradient(to left, #f63b54, #7647e6);
+  box-shadow: 0 12px 24px rgba(42, 46, 255, 0.6);
+  color: white;
   opacity: 1.5;
+  border-radius: rem;
+  font-size: 1.3rem;
+  text-decoration: solid;
+  font-weight: 500;
 }
 
 .contact-form button i {

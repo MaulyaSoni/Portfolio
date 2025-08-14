@@ -64,6 +64,7 @@ body {
   font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(255, 245, 245, 0.849);
 }
 
 /* Hero Card with Glow */
@@ -165,10 +166,13 @@ body {
 
 .email:hover{
   background-color: red !important;
+  box-shadow: 0 0 10px rgb(0, 255, 242);
 }
 .linkedin:hover {
   background-color: blue !important;
+   box-shadow: 0 0 10px rgb(0, 255, 64);
 }
 .github:hover {
   background-color: rgb(49, 49, 51) !important;
+   box-shadow: 0 0 10px rgb(255, 255, 255) !important;
 }
