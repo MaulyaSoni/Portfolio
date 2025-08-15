@@ -127,7 +127,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   Open  &nbsp;
-                  <i class="fa-solid fa-unlock"></i>
+                  <i className="fa-solid fa-unlock"></i>
                 </a>
                 <a
                   className="project-link"
@@ -137,7 +137,7 @@ export default function Projects() {
                 >
                   Get Code
                   &nbsp;
-                  <i class="fa-solid fa-code"></i>
+                  <i className="fa-solid fa-code"></i>
                 </a>
               </div>
             </article>

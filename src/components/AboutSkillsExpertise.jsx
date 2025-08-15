@@ -50,9 +50,9 @@ export default function AboutSkillsExpertise() {
             impactful products.
           </p>
         </div>
-        <div className="about-img" data-scroll data-scroll-speed="2">
+        {/* <div className="about-img" data-scroll data-scroll-speed="2">
           <img src="./src/assets/me.jpg" alt="profile" />
-        </div>
+        </div> */}
       </div>
 
       {/* Skills */}

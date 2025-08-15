@@ -22,6 +22,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  position: relative;
+  margin: 1%;
   margin-bottom: 10px;
   text-shadow: 0 0 10px rgba(2, 233, 222, 0.7);
 }
@@ -82,13 +84,14 @@
   border-radius: 4px;
 }
 
+
 .nav-links li a:hover::after {
   transform: scaleX(1);
 }
 
 /* Active nav item */
 .nav-links li.active a {
-  background: linear-gradient(to right, #3b82f6, #a855f7);
+  background: linear-gradient(to right, #649dfa, #b53aee);
   color: white;
   padding: 8px 16px;
   box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
