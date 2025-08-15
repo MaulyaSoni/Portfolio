@@ -6,7 +6,7 @@ import "./Hero.css";
 
 const Hero = () => {
   const texts = [
-    { text: "MERN Stack Developer 🎨", color: "#d8695fff" }, // coral
+    { text: "MERN Stack Developer 🎨", className: "Mern" }, // coral
     { text: "AIML Enthusiast 💻", color: "#4cafef" }, // blue
     { text: "Critical thinker 💡", color: "#ffc107" }, // yellow
   ];
@@ -35,7 +35,8 @@ const Hero = () => {
     >
       <div className="container hero-content">
         <h1>
-          Hey, I'm <span className="gradient-text"> </span>
+          <h1 className="Hey">Hey, I'm</h1>{" "}
+          <span className="gradient-text"> </span>
           <span
             className={`slideshow-text ${fade ? "fade-in" : "fade-out"}`}
             style={{
@@ -59,6 +60,7 @@ const Hero = () => {
             fontSize: "20px",
           }}
         >
+          <br />
           Let’s build something amazing together.
         </p>
 
@@ -100,6 +102,26 @@ const Hero = () => {
           <i className="fas fa-envelope"></i>
         </a>
       </div>
+
+      <br />
+      <section class="skills-section">
+        <div className="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML & CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">React.js</div>
+          <div class="skill-card">Node & Express</div>
+          <div class="skill-card">Numpy & Pandas</ div>
+          <div class="skill-card">C , C++</div >
+          <div class="skill-card">SQL</div>  
+          {/* <div class="skill-card">PowerBI</div >
+          <div class="skill-card">MS Excel</div > */}
+           
+        </div>
+        </div>
+      </section>
     </motion.section>
   );
 };
