@@ -8,7 +8,7 @@ export default function Achievements() {
         <h2 className="section-title">Achievements</h2>
 
         <div className="achievements-grid">
-          <div className="achievement-card">``
+          <div className="achievement-card">
             <h3>Bagdes <i className="fa-regular fa-star"></i></h3>
             <p>Check my badges on Credly</p>
             <a
@@ -33,11 +33,8 @@ export default function Achievements() {
               View Coursera Profile
             </a>
           </div>
-          {/* Add more achievement cards if needed */}
-          <div className="achievement-card">
-            <h3>Coming Soon</h3>
-            <p>More achievements will be updated here.</p>
-          </div>
+    
+          
         </div>
       </div>
     </section>

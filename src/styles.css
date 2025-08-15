@@ -48,12 +48,18 @@ html, body, #root {
   padding: 0;
   display: flex;
   flex-direction: column;
+  
 }
 
 body {
+  /* font-family: sans-serif;
+  /* background: linear-gradient(to lef, #0f172a, #29426b); */
   font-family: sans-serif;
- background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #0f172a, #29426b); 
   color: white;
+  overflow-x: hidden; /* ADD THIS */
+
+
 }
 
 main {

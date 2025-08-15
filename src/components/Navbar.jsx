@@ -227,7 +227,7 @@ const navItems = [
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  return z(
+  return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="gradient">

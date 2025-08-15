@@ -91,7 +91,8 @@ h3{
   
 }
 .expertise-container{
-  
+  position: relative;
+  overflow: hidden;
 }
 .expertise-card:hover {
   transform: translateY(-5px);
