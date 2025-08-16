@@ -1,12 +1,12 @@
 // src/components/Hero.jsx
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import "./Hero.css";
 
 const Hero = () => {
   const texts = [
-    { text: "MERN Stack Developer 🎨", className: "Mern" }, // coral
+    { text: "MERN Stack Developer 🎨", color : "#c05858ff" }, // coral
     { text: "AIML Enthusiast 💻", color: "#4cafef" }, // blue
     { text: "Critical thinker 💡", color: "#ffc107" }, // yellow
   ];
@@ -34,7 +34,7 @@ const Hero = () => {
       transition={{ duration: 1 }}
     >
       <div className="container hero-content">
-        <h1>
+        
           <h1 className="Hey">Hey, I'm</h1>{" "}
           <span className="gradient-text"> </span>
           <span
@@ -49,7 +49,7 @@ const Hero = () => {
           >
             {texts[index].text}
           </span>
-        </h1>
+         
 
         <h1 className="h1 shine">Welcome to the world of creativity</h1>
 
@@ -101,25 +101,25 @@ const Hero = () => {
         <a href="mailto:you@example.com" className="social-btn email">
           <i className="fas fa-envelope"></i>
         </a>
-      </div>
+            </div>
 
-      <br />
-      <section class="skills-section">
-        <div className="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">HTML & CSS</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">React.js</div>
-          <div class="skill-card">Node & Express</div>
-          <div class="skill-card">Numpy & Pandas</ div>
-          <div class="skill-card">C , C++</div >
-          <div class="skill-card">SQL</div>  
+            <br />
+      <section className="skills-section">
+  
+        <h2 className="section-title">Skills</h2>
+        <div className="skills-grid">
+          <div className="skill-card">HTML & CSS</div>
+          <div className="skill-card">JavaScript</div>
+          <div className="skill-card">Python</div>
+          <div className="skill-card">React.js</div>
+          <div className="skill-card">Node & Express</div>
+          <div className="skill-card">Numpy & Pandas</ div>
+          <div className="skill-card">C , C++</div >
+          <div className="skill-card">SQL</div>  
           {/* <div class="skill-card">PowerBI</div >
           <div class="skill-card">MS Excel</div > */}
            
-        </div>
+         
         </div>
       </section>
     </motion.section>

@@ -61,12 +61,12 @@
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  border: #2a30495d solid 2px;
+  border: #3a405a5d solid 2px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #f0f3f2;
  /* background: linear-gradient(135deg, #858586, #29426b); */
   text-decoration: none;
-
+  opacity: 1;
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
@@ -77,10 +77,12 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0px;
-  right: 0px;
-  height: 3px;
-  background: linear-gradient(to right, #3b82f6, #ffffff);
+  left: 4px;
+  right: 4px;
+  height: 1px;
+  padding-bottom: 1px;
+  opacity: 1;
+  background: linear-gradient(to right, #649dfa, #b53aee);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -95,10 +97,13 @@
 
 /* Active nav item */
 .nav-links li.active a {
-  background: linear-gradient(to right, #649dfa, #b53aee);
+background: linear-gradient(to right, #649dfa, #b53aee);
+
+
   color: white;
+  border: none;
   padding: 8px 16px;
-  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 100px rgba(158, 55, 255, 0.6);
   border-radius: 8px;
 }
 
