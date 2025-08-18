@@ -25,7 +25,7 @@ export default function Achievements() {
             <h3>Certifications <i className="fa-solid fa-award"></i></h3>
             <p>Check my certifications on Coursera</p>
             <a
-              href="https://www.coursera.org/account-profile"
+              href="https://www.coursera.org/user/20550ecaf86da97def5e5011aeb70997"
               target="_blank"
               rel="noopener noreferrer"
               className="achievement-link"
