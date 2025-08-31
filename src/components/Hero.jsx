@@ -35,7 +35,7 @@ const Hero = () => {
     >
       <div className="container hero-content">
         
-          <h1 className="Hey">Hey, I'm</h1>{" "}
+          <h1 className="Hey">Hey, I'm </h1><h1 className="h1 name">Maulya Soni </h1>
           <span className="gradient-text"> </span>
           <span
             className={`slideshow-text ${fade ? "fade-in" : "fade-out"}`}
