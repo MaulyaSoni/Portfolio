@@ -82,17 +82,14 @@ export default function AboutSkillsExpertise() {
         <div className="expertise-grid">
           <div className="expertise-card">
             <FaLaptopCode size={30} />
-            <h3>Full Stack Development</h3>
+            <h3>Data Science</h3>
           </div>
           
-          {/* <div className="expertise-card">
-            <FaMobileAlt size={30} />
-            <h3>Mobile Development</h3>
-          </div> */}
-          {/* <div className="expertise-card">
+          
+          <div className="expertise-card">
             <FaCloud size={30} />
             <h3>Cloud Architecture</h3>
-          </div> */}
+          </div>
           {/* <div className="expertise-card">
             <FaCogs size={30} />
             <h3>Data Analytics</h3>

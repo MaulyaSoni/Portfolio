@@ -1,4 +1,4 @@
-import AboutSkillsExpertise from "../components/AboutSkillsExpertise";
+    import AboutSkillsExpertise from "../components/AboutSkillsExpertise";
 import "./About.css";
 
 export default function About() {
