@@ -1,5 +1,7 @@
 import "./Contact.css";
 import emailjs from "emailjs-com";
+import PageTransition from "../components/PageTransition";
+import AnimatedSection from "../components/AnimatedSection";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -17,12 +19,13 @@ export default function Contact() {
   }
 
   return (
-    <section className="contact" id="contact" data-aos="fade-up">
-      <div className="container">
-        <h2 className="gradient-text fade-up">Contact  me</h2>
-        <p className="subtitle">
-          Want to collaborate or having  a question ?  Drop me a message below.
-        </p>
+    <PageTransition>
+      <section className="contact" id="contact">
+        <AnimatedSection className="container">
+          <h2 className="gradient-text fade-up">Contact  me</h2>
+          <p className="subtitle">
+            Want to collaborate or having  a question ?  Drop me a message below.
+          </p>
 
         <div className="contact-wrapper">
           {/* Contact Info */}
@@ -61,7 +64,8 @@ export default function Contact() {
             </button>
           </form>
         </div>
-      </div>
-    </section>
+        </AnimatedSection>
+      </section>
+    </PageTransition>
   );
 }

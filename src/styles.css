@@ -1,66 +1,142 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Jakarta+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&display=swap');
 
 
 /* ==============================
-   Root Variables & Global Styles
+   AI/GenAI Theme - Root Variables
 ============================== */
 :root {
-  /* Colors */
-  --color-primary: #4f46e5; /* Indigo */
-  --color-secondary: #ec4899; /* Pink */
-  --color-accent: #22d3ee; /* Cyan */
-  --color-bg: #f9fafb;
-  --color-dark: #1f2937;
-  --color-light: #ffffff;
-
-  /* Typography */
+  /* AI Theme Colors - Vibrant & Futuristic */
+  --ai-purple: #a855f7;
+  --ai-pink: #ec4899;
+  --ai-blue: #3b82f6;
+  --ai-cyan: #06b6d4;
+  --ai-yellow: #fbbf24;
+  --ai-navy: #1e3a8a;
+  --ai-deep-purple: #7c3aed;
+  --ai-magenta: #d946ef;
+  
+  /* Dark Theme Base */
+  --bg-primary: #0a0118;
+  --bg-secondary: #1a0b2e;
+  --bg-tertiary: #16213e;
+  --bg-card: rgba(30, 20, 60, 0.6);
+  --bg-card-hover: rgba(50, 30, 90, 0.8);
+  
+  /* Light Accents */
+  --color-white: #ffffff;
+  --color-light-gray: #e5e7eb;
+  --color-gray: #9ca3af;
+  
+  /* Gradient Combinations */
+  --gradient-ai: linear-gradient(135deg, var(--ai-purple) 0%, var(--ai-pink) 50%, var(--ai-blue) 100%);
+  --gradient-neural: linear-gradient(135deg, var(--ai-navy) 0%, var(--ai-deep-purple) 50%, var(--ai-magenta) 100%);
+  --gradient-glow: linear-gradient(135deg, var(--ai-cyan) 0%, var(--ai-blue) 50%, var(--ai-purple) 100%);
+  --gradient-warm: linear-gradient(135deg, var(--ai-yellow) 0%, var(--ai-pink) 100%);
+  
+  /* Glass Morphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
+  /* Neon Glow Effects */
+  --glow-purple: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3);
+  --glow-pink: 0 0 20px rgba(236, 72, 153, 0.5), 0 0 40px rgba(236, 72, 153, 0.3);
+  --glow-blue: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+  --glow-cyan: 0 0 20px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.3);
+  
+  /* Typography - Updated to Poppins and Jakarta Sans */
   --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-tech: 'Orbitron', monospace;
 
   /* Shadows */
-  --shadow-soft: 0 4px 20px rgba(0,0,0,0.05);
-  --shadow-medium: 0 8px 25px rgba(0,0,0,0.1);
-  --shadow-strong: 0 12px 40px rgba(0,0,0,0.15);
+  --shadow-soft: 0 4px 20px rgba(168, 85, 247, 0.15);
+  --shadow-medium: 0 8px 25px rgba(168, 85, 247, 0.25);
+  --shadow-strong: 0 12px 40px rgba(168, 85, 247, 0.35);
+  --shadow-neon: 0 0 30px rgba(168, 85, 247, 0.6);
 
   /* Transitions */
-  --transition-fast: 0.3s ease;
-  --transition-slow: 0.6s ease;
+  --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   /* Radius & Spacing */
-  --radius-small: 8px;
-  --radius-medium: 16px;
-  --radius-large: 24px;
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 30px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-/* Apply Jakarta Sans font globally */
 }
 
- 
- 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  
 }
 
 body {
-  /* font-family: sans-serif;
-  /* background: linear-gradient(to lef, #0f172a, #29426b); */
-  font-family: sans-serif;
-  background:#08063b !important;
-  color: white;
-  overflow-x: hidden; /* ADD THIS */
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--color-white);
+  overflow-x: hidden;
+  /* Enable GPU acceleration */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
 
+/* AI-themed animated background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse at 20% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+  z-index: -1;
+  animation: backgroundPulse 15s ease-in-out infinite;
+}
 
+@keyframes backgroundPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+/* Animated grid background */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 85, 247, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
 }
 
 main {

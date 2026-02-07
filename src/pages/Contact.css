@@ -9,22 +9,21 @@
 .gradient-text {
   font-weight: 700;
   padding: 20px 10px;
-  /* reduced from 80px */
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
-  /* reduced from 40px */
   color: #0cffdf !important;
   text-shadow: 0 0 10px rgba(0, 225, 255, 0.7);
+  font-family: 'Poppins', sans-serif;
 }
 
 .subtitle {
   text-align: center;
   max-width: 600px;
   margin: 0 auto 20px;
-  /* more balanced spacing */
   color: #cbd5e1;
   font-size: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* === Layout === */

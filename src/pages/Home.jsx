@@ -1,39 +1,14 @@
-import { useEffect } from "react";
 import "../styles.css";
 import Hero from "../components/Hero";
 import React from "react";
-import AboutSkillsExpertise from "../components/AboutSkillsExpertise";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import About from "./About";
-import Achievements from "./Achievements";
-export default function Home() {
-  useEffect(() => {
-    // Reveal animation on mount
-    const els = document.querySelectorAll(".reveal");
-    els.forEach((el, i) => {
-      setTimeout(() => el.classList.add("in"), i * 120);
-    });
-  }, []);
+import PageTransition from "../components/PageTransition";
 
+export default function Home() {
   return (
-    <>
+    <PageTransition>
       <section id="hero">
         <Hero />
       </section>
-
-      {/* Replaced old About with AboutSkillsExpertise
-      <section id="about">
-        <About />
-      </section>
-
-      <section id="projects">
-        <Projects />
-      </section>
-
-      <section id="contact">
-        <Contact />
-      </section> */}
-    </>
+    </PageTransition>
   );
 }

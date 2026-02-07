@@ -8,6 +8,8 @@ import {
   FaGlobe,
   FaCogs,
 } from "react-icons/fa";
+import AnimatedSection from "./AnimatedSection";
+import { AnimatedContainer, AnimatedItem } from "./AnimatedSection";
 
 export default function AboutSkillsExpertise() {
   const DataAnalyticsIcon = (props) => (
@@ -28,6 +30,7 @@ export default function AboutSkillsExpertise() {
       <polyline points="3 20 9 12 15 16 21 8" />
     </svg>
   );
+  
   return (
     <section
       data-scroll-section
@@ -35,78 +38,49 @@ export default function AboutSkillsExpertise() {
       id="about"
     >
       {/* About Me */}
-      <div className="about-container" data-scroll data-scroll-speed="1">
-        <div
-          className="about-text"
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="-1"
-        >
+      <AnimatedSection className="about-container" delay={0.1}>
+        <div className="about-text">
           <h2>About Me</h2>
           <p>
-            I’m a passionate developer with a love for crafting clean,
+            I'm a passionate developer with a love for crafting clean,
             high-performing applications. From building sleek UIs to designing
             scalable backend systems, I thrive on turning ideas into real,
             impactful products.
           </p>
         </div>
-       
-      </div>
-
-      {/* Skills */}
-      {/* <div className="skills-container" data-scroll data-scroll-speed="1">
-        <h2>Skills</h2>
-        <div className="skill">
-          <span>React</span>
-          <div className="skill-bar">
-            <div className="fill" style={{ width: "90%" }}></div>
-          </div>
-        </div>
-        <div className="skill">
-          <span>Node.js</span>
-          <div className="skill-bar">
-            <div className="fill" style={{ width: "85%" }}></div>
-          </div>
-        </div>
-        <div className="skill">
-          <span>Database Design</span>
-          <div className="skill-bar">
-            <div className="fill" style={{ width: "80%" }}></div>
-          </div>
-        </div>
-      </div> */}
+      </AnimatedSection>
 
       {/* Expertise */}
-      <div className="expertise-container" data-scroll data-scroll-speed="1">
-        <h2>Expertise</h2>
-        <div className="expertise-grid">
-          <div className="expertise-card">
+      <div className="expertise-container">
+        <AnimatedSection delay={0.2}>
+          <h2>Expertise</h2>
+        </AnimatedSection>
+        <AnimatedContainer className="expertise-grid" staggerDelay={0.1}>
+          <AnimatedItem className="expertise-card">
             <FaLaptopCode size={30} />
             <h3>Data Science</h3>
-          </div>
+          </AnimatedItem>
           
-          
-          <div className="expertise-card">
+          <AnimatedItem className="expertise-card">
             <FaCloud size={30} />
             <h3>Cloud Architecture</h3>
-          </div>
-          {/* <div className="expertise-card">
-            <FaCogs size={30} />
-            <h3>Data Analytics</h3>
-          </div> */}
-          <div className="expertise-card">
+          </AnimatedItem>
+          
+          <AnimatedItem className="expertise-card">
             <DataAnalyticsIcon size={30} />
             <h3>Data Analytics</h3>
-          </div>
-          <div className="expertise-card">
+          </AnimatedItem>
+          
+          <AnimatedItem className="expertise-card">
             <FaDatabase size={30} />
             <h3>Database Design</h3>
-          </div>
-          <div className="expertise-card">
+          </AnimatedItem>
+          
+          <AnimatedItem className="expertise-card">
             <FaGlobe size={30} />
             <h3>Web Technologies</h3>
-          </div>
-        </div>
+          </AnimatedItem>
+        </AnimatedContainer>
       </div>
     </section>
   );

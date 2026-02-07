@@ -1,0 +1,343 @@
+/* Global Animation Utilities */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Utility classes for animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.4), 
+              0 0 30px rgba(236, 72, 153, 0.2);
+}
+
+.hover-scale {
+  transition: transform var(--transition-bounce);
+}
+
+.hover-scale:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+.hover-glow {
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.hover-glow:hover {
+  box-shadow: var(--glow-purple);
+  border-color: var(--ai-purple);
+}
+
+/* AI-themed hover effects */
+.hover-neon {
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.hover-neon:hover {
+  box-shadow: 
+    0 0 20px rgba(168, 85, 247, 0.6),
+    0 0 40px rgba(236, 72, 153, 0.4),
+    0 0 60px rgba(59, 130, 246, 0.2);
+  transform: translateY(-5px);
+}
+
+.hover-glitch {
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.hover-glitch:hover {
+  animation: glitchEffect 0.3s ease;
+}
+
+@keyframes glitchEffect {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Stagger delay utilities */
+.stagger-1 {
+  animation-delay: 0.1s;
+}
+
+.stagger-2 {
+  animation-delay: 0.2s;
+}
+
+.stagger-3 {
+  animation-delay: 0.3s;
+}
+
+.stagger-4 {
+  animation-delay: 0.4s;
+}
+
+.stagger-5 {
+  animation-delay: 0.5s;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, input, textarea, select {
+  transition: all var(--transition-fast);
+}
+
+/* Add smooth focus states with AI theme */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid var(--ai-purple);
+  outline-offset: 2px;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* Button enhancements */
+button, .btn, a.btn {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-ai);
+  border: 2px solid transparent;
+  border-radius: var(--radius-medium);
+  color: var(--color-white);
+  font-weight: 600;
+  font-family: var(--font-body);
+  padding: 14px 32px;
+  cursor: none;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+button::before, .btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+button:hover::before, .btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: var(--glow-purple);
+  border-color: var(--color-white);
+}
+
+/* Input and textarea enhancements */
+input, textarea, select {
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: var(--radius-small);
+  color: var(--color-white);
+  padding: 14px 18px;
+  font-family: var(--font-body);
+  transition: all var(--transition-fast);
+}
+
+input:focus, textarea:focus, select:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--ai-purple);
+  box-shadow: var(--glow-purple);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-gray);
+}
+
+/* Card enhancements */
+.card, .category-card, .project-card, .achievement-card, .expertise-card {
+  background: var(--bg-card);
+  border: 2px solid var(--glass-border);
+  border-radius: var(--radius-medium);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover, .category-card:hover, .project-card:hover, 
+.achievement-card:hover, .expertise-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--ai-purple);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--glow-purple);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* AI-themed text gradients */
+.text-gradient-ai {
+  background: var(--gradient-ai);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-neural {
+  background: var(--gradient-neural);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-glow {
+  background: var(--gradient-glow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section headings enhancement */
+h1, h2, h3, .section-title {
+  font-family: var(--font-heading);
+  background: var(--gradient-ai);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.3));
+}
+
+/* Performance optimization */
+.will-animate {
+  will-change: transform, opacity;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

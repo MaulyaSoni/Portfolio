@@ -70,6 +70,9 @@
 
 import { useState } from "react";
 import "./Projects.css";
+import PageTransition from "../components/PageTransition";
+import AnimatedSection from "../components/AnimatedSection";
+import { AnimatedContainer, AnimatedItem } from "../components/AnimatedSection";
 
 export default function Projects() {
   const [expandedSections, setExpandedSections] = useState({});
@@ -97,26 +100,26 @@ export default function Projects() {
       link: "https://github.com/MaulyaSoni/Certificate-Portfolio-uploader"
     },
     {
-      title: "Sales Prediction Model",
-      desc: "Machine learning model to predict sales using historical data and market trends.",
-      tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      title: "Credit-Card-Fraud-Detection",
+      desc: "Machine learning model to detect the fraud which is done in the case of Credit Card ",
+      tech: ["Python", "Random Forest", "Logistics", "Neural Networks"],
       category: "ML",
-      link: "#"
+      link: "https://github.com/MaulyaSoni/Credit-Card-Fraud-Detection"
     },
     {
-      title: "Customer Segmentation",
-      desc: "Data analytics project for customer segmentation using clustering algorithms.",
-      tech: ["Python", "Pandas", "Seaborn", "K-Means"],
-      category: "Analytics",
-      link: "#"
-    },
-    {
-      title: "Sentiment Analysis",
-      desc: "NLP model for analyzing sentiment in social media posts and reviews.",
-      tech: ["Python", "NLTK", "TensorFlow", "Streamlit"],
+      title: "Phising-Email-Detection",
+      desc: "Phising email detection using machine learning to prevent the data theft.  ",
+      tech: ["Python", "Logistic Regression ", "Random Forest"], 
       category: "ML",
-      link: "#"
-    }
+      link: "https://github.com/MaulyaSoni/Phising-Email-Detection"
+    },
+    // {
+    //   title: "Sentiment Analysis",
+    //   desc: "NLP model for analyzing sentiment in social media posts and reviews.",
+    //   tech: ["Python", "NLTK", "TensorFlow", "Streamlit"],
+    //   category: "ML",
+    //   link: "#"
+    // }
   ];
 
   const categories = [
@@ -137,17 +140,20 @@ export default function Projects() {
   };
 
   return (
-    <section className="projects" id="projects">
-      <div className="projects-container">
-        <h2 className="section-title">My Projects</h2>
+    <PageTransition>
+      <section className="projects" id="projects">
+        <div className="projects-container">
+          <AnimatedSection>
+            <h2 className="section-title">My Projects</h2>
+          </AnimatedSection>
 
-        <div className="projects-grid">
+          <AnimatedContainer className="projects-grid" staggerDelay={0.15}>
           {categories.map((category, index) => {
             const isExpanded = expandedSections[category.name];
             const categoryProjects = getProjectsByCategory(category.name);
             
             return (
-              <div key={category.name} className="category-section">
+              <AnimatedItem key={category.name} className="category-section">
                 {/* Category Card */}
                 <div 
                   className="category-card"
@@ -204,11 +210,12 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </AnimatedItem>
             );
           })}
+          </AnimatedContainer>
         </div>
-      </div>
-    </section>
+      </section>
+    </PageTransition>
   );
 }

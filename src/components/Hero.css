@@ -1,5 +1,5 @@
-/* Import Jakarta Sans font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+/* Import Fonts - Using Poppins and Jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -27,6 +27,8 @@ body {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .gradient-text {
@@ -42,10 +44,11 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   animation: shineSweep 5s infinite linear;
+  font-family: 'Poppins', sans-serif;
 }
 .Hey{
-   
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 @keyframes shineSweep {
   0% { background-position: -100%; }

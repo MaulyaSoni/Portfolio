@@ -29,6 +29,8 @@
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #00bcd4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 /* ================= Projects Grid ================= */
@@ -77,6 +79,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 .category-icon {
@@ -89,6 +93,7 @@
   line-height: 1.6;
   color: inherit;
   text-shadow: 0 0 10px rgba(43, 255, 0, 0.658) !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* ================= Category Link (Button) ================= */
